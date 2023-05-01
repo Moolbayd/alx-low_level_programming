@@ -1,14 +1,13 @@
-#include "lists.h"
+#include <stdio.h>
+
+void first(void) __attribute__ ((constructor));
 
 /**
- * startupfun - Prints a startup message before the main function is executed.
- *
- * Return: Nothing.
+ * first - prints a sentence before the main
+ * function is executed
  */
-void startupfun(void) __attribute__ ((constructor));
-
-void startupfun(void)
+void first(void)
 {
-	printf("You're beat! and yet, you must allow,\n"
-	"I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
